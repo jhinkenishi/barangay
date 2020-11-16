@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+}
+/*Navigation Starts*/
+.selected{
+    background-color: #0f536e;
+}
+.can-not-be-seleted{
+    cursor: default;
+}
+a{
+    text-decoration: none;
+}
+
+nav {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    background-color: #0a3647;
+    user-select: none;
+    position: sticky;
+    top: 0;
+    color: white;
+    z-index: 1;
+
+}
+  
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+  
+li{
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    background: #0a3647;
+
+}
+
+li a{
+    color: #cfcaca;
+}
+  
+li:hover {
+    background-color: #0f536e;
+    cursor: pointer;
+}
+  
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+  
+ul li ul li {
+    clear: both;
+    width: 100%;
+    border-bottom: .2px rgb(32, 32, 32) solid;
+
+}
+/*Navigation Ends*/
+.content{
+
+}
+
+/*Section Starts*/
+
+/*Login Form Starts*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+  
+  /* Set a style for all buttons */
+button {
+    background-color: #0d5e5e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
+button:hover {
+    opacity: 0.8;
+}
+  
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+  
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+  
+.container {
+    padding: 16px;
+    border-bottom-right-radius: 25px;
+
+}
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+  
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.795); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+}
+  
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #0d5e5e;
+    cursor: pointer;
+}
+  
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+  
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+/*Login Form Ends*/
+
+section{
+    position: relative;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    user-select: none;
+}
+#background-overlay{
+    position: absolute;
+    top: 0;
+    background: url("../images/0.jpg");
+
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+
+}
+#color-overlay{
+    position: absolute;
+    top: 0;
+    background: #104a6b91;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+}
+section img{
+    width: 95%;
+    height: 65%;
+    box-shadow:10px 10px 20px #000;
+
+}
+
+/**/
+a.previous, a.next{
+    margin-top: 10%;
+    position: absolute;
+    text-decoration: none;
+    display: inline-block;
+    padding: 45px 16px;
+    font-size: 4em;
+    opacity: .5;
+}
+  
+a.previous:hover, a.next:hover {
+    color: #ffffff;
+    font-size: 5em;
+    transition: .5s;
+    opacity: 1;
+
+}
+  
+.previous {
+    background-color: transparent;
+    color: #ffffff;
+
+}
+  
+.next {
+    background-color: transparent;
+    background-size: auto;
+    margin-left: 90%;
+    color: #ffffff;
+}
+  
+.round {
+    border-radius: 50%;
+}
+/**/
+/*Section Ends*/
+
+/*Article Starts*/
+
+.zoom-element{
+    float: left;
+    width: 45%;
+    margin-right: 1rem;
+}
+
+
+article{
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    font-size: 14px;
+    color: #082222;
+    line-height: 3em;
+}
+#photo-container{
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.3em;
+    padding-top: 5%;
+    width: 100%;
+    height: 35%;
+}
+
+.photo{
+    float: left;
+    width: 15rem;
+    height: 15rem;
+    margin-right: 10px;
+    border-radius: 25px;
+}
+.photo:hover{
+    box-shadow: 10px 5px 15px rgb(22, 22, 22);
+    transform: scale(1.2,1.2) rotateZ(4deg);
+    border-radius: 4px;
+    transition: .5s;
+    
+}
+#quote-container{
+    margin-top: 3rem;
+    position: relative;
+}
+#quote{
+    padding-top: 6rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    opacity: .6;
+}
+#quote-overlay{
+    position: absolute;
+    background: #0000009f;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+
+}
+#parallax{
+    width: 100%;
+    height: 35%;
+    background: url("../images/church\ 2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: .5rem;
+    
+}
+#quote-for-overlay img{
+
+}
+.logo{
+    float: right;
+    margin-top: 4.5rem;
+    margin-right: 35rem;
+}
+.logo img{
+    width: 20rem;
+    mix-blend-mode: color-dodge;
+}
+
+#photo-collage{
+    text-align: center;
+    padding-top: 2rem;
+}
+#photo-collage .photo{
+    float: none;
+    width: 15rem;
+    height: 15rem;
+    margin: 0;
+    margin-right: 0;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    opacity: .5;
+}
+#photo-collage .photo:hover{
+    transform: scale(1, 1);
+    box-shadow: none;
+    opacity: 1;
+}
+#photo-collage .photo:active{
+    transform: scale(1.1, 1.1);
+    box-shadow: none;
+    opacity: 1;
+}
+
+/*Article Ends*/
+
+
+/*Footer Starts*/
+footer{
+    height: 25%;
+    background: #070f13;
+    color: #8d8e91;
+    overflow: hidden;
+}
+
+
+#copyright{
+    padding-top: 5rem;
+    
+}
+
+/*Footer Ends*/

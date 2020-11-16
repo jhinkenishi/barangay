@@ -1,0 +1,117 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/login.js">
+    </script>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul>
+            <li ><a  href="home.html">Home</a></li>
+            <li><a>Business</a>
+              <ul class="dropdown">
+                <li><a href="attraction.html">Attraction</a></li>
+              </ul>
+            </li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li ><a href="#">Services</a>
+              <ul class="dropdown">
+                <li><a href="certification.html">Certification Application</a></li>
+                <li><a href="personel.html">Find a Personel</a></li>
+                <li><a href="applicant.html">Create Applicant</a></li>
+              </ul>
+            </li>
+            <li class="selected" ><a href="aboutus.html">About Us</a></li>
+            <li id="login" style="position: absolute; left:94%;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#">Login</a></li>
+          </ul>
+    </nav>
+
+    <div id="main" class="content">
+
+      <!-------------------------Start Of Modal Container-------------------------------------------->
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none';" class="close" title="Close Modal">&times;</span>
+            <img src="images/profile-pic-image.png" alt="Avatar" class="avatar" style="width: 20%;">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+     
+      
+      <article>
+        <div style="text-align: center;">
+        </div>
+        <div style="font-size: 1.5em">
+          <p>
+
+            <img class="zoom-element" src="images/rosario mayor.png" style="width:28%;">
+            <h1  style="font-size: 1em">MAYOR</h1>
+            Manuel Alvarez is a Filipino politician. He is currently serving as mayor of Rosario, a municipality of Batangas Province, Calabarzon region, Philippines.
+            It is a growing community located in the mid-northern part of Central Luzon’s extensive central plains. It is within the cross road of three major thoroughfares, the Tarlac-Pangasinan-La Union Expressway, the Gerona-Guimba Road and the East-West Coast Road (Dingalan-Lingayen Highway) which brings a great deal for economic growth. Along with this, PURA is envisioned to be a sustainable community characterized by a mix of land uses that combines utility and aesthetics that gives an ambience that soothes the spirit, invites high productivity, and encourages healthy living. We encourage everyone to visit and witness the pureness of our municipality. 
+            Come and enjoy the beauty of our place and experience our “Puranian” cordiality.
+            <br><br>
+         
+          </p>
+          <br>
+        </div>
+        
+        <div style="font-size: 1.5em">
+          <p>
+
+            <img class="zoom-element" src="images/Sandra Y. Eriguel.jpg" style="width:28%;">
+            <h1  style="font-size: 1em">CONGRESSMAN</h1>
+            Sandra Y. Enriguel is wife of Eufranio "Franny" Chan Eriguel, M.D. that was a Filipino medical doctor and politician from the Eriguel political clan of La Union, who was gunned down in an ambush on 12 May 2018.
+            Eriguel served three terms as Mayor of Agoo, La Union and two terms as Congressman for the Second District of La Union. His wife Sandra Young Eriguel (widow) currently serves as Congressman for the Second District of La Union, while his daughter Stefanie Ann Eriguel currently serves as Mayor of Agoo.
+            <br><br>
+         
+          </p>
+          <br>
+        </div>
+      </article>
+      <aside></aside>
+    </div>
+    <div style="background: #1b648157; color:#0a2424;">
+      <div class="logo">
+        <img src="images/no logo.png"> 
+      </div>
+      <div style="font-size: 18px;padding-bottom: 3rem; padding-top: 3rem; padding-left: 3rem; padding-right: 3rem; width:25%;">
+        <h3 >OUR VISION</h3>
+        A vibrant and progressive community, embarking to be an alternative center for <br>agro-trade and commercial activity where healthy and empowered people enjoy prosperity, peace and working in harmony to achieve a balanced sustainable growth, attuned to globalization.
+        <br><br>
+        <h3>OUR MISSION</h3>
+        To pursue socio-economic sustainability through agricultural and fishery modernization – particulary putting in place a state-of-the-art urban amenities, yet keeping intact its natural environments, ecological valance and rural ambience, and enhancing its indigenous cultural heritage.
+      </div>
+    </div>
+  <footer>
+    <p id="copyright" style="text-indent: 2.5em; position:relative;">
+      COPYRIGHT © 2020. MUNICIPALITY OF ROSARIO PROVINCE OF LA UNION. ALL RIGHTS RESERVED
+      <img src="images/Systems_Technology_Institute.png" style="float: right; width: 10rem; top:50; right:10; position:absolute;">
+    </p>
+  </footer>
+
+</body>
+</html>

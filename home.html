@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/anim.js"></script>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul>
+            <li class="selected"><a  href="home.html">Home</a></li>
+            <li><a>Business</a>
+              <ul class="dropdown">
+                <li><a href="attraction.html">Attraction</a></li>
+              </ul>
+            </li>
+            <li><a href="contacts.html">Contacts</a></li>
+            
+            <li><a href="#">Services</a>
+              <ul class="dropdown">
+                <li><a href="certification.html">Certification Application</a></li>
+                <li><a href="personel.html">Find a Personel</a></li>
+                <li><a href="applicant.html">Create Applicant</a></li>
+              </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li id="login" style="position: absolute; left:94%;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#">Login</a></li>
+          </ul>
+    </nav>
+
+    <div id="main" class="content">
+
+      <!-------------------------Start Of Modal Container-------------------------------------------->
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none';" class="close" title="Close Modal">&times;</span>
+            <img src="images/profile-pic-image.png" alt="Avatar" class="avatar" style="width: 20%;">
+          </div>
+      
+          <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button type="submit">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+          </div>
+        </form>
+      </div>
+      <section>
+        <div id="color-overlay"></div>
+        <div id="background-overlay"></div>
+        <a href="#" id="prev" class="previous"><</a>
+        <a href="#" id="next" class="next">></a>
+
+        <img id="changeable-image" src="images/0.jpg" alt="0">
+      </section>
+      <!-------------------------End Of Modal Container-------------------------------------------->
+      
+      <article>
+        <div style="text-align: center;">
+          <img  src="images/rosarioLogo.jpg" alt="RosarioLogo" style="position: absolute; height: 75%; z-index: -1; padding-top: 4rem; opacity: .1">
+        </div>
+        <div>
+          <h1 style="text-align: center; font-size:30px">Barangay Bani</h1>
+          <p>
+            Bani is a barangay in the municipality of Rosario, in the province of La Union. 
+            Its population as determined by the 2015 Census was 1,654. 
+            This represented 2.98% of the total population of Rosario. 
+            <img class="zoom-element" src="images/BaniPangasinan.jpg">
+            Bani was founded on March 18, 1769 (from Zambales). In May 1903, it was transferred to Pangasinan together with the towns of Agno, Alaminos, Anda, Bolinao, Burgos, Dasol, Infanta and Mabini. San Simon, the original Bani, was transferred from Namagbagan to sitio Almacin in 1859.
+            The Immaculate Conception, Patron Saint of San Simon, disappeared from the church altar and discovered on top of the tall Bani tree in the vicinity of the present Church. She was brought to the Namagbagan church, and returned to the present site. Bani's name came from the Bani tree where the image of the Patroness was found. Bani (Millettia pinnata) is a smooth tree (height of 8 to 25 meters).
+            In 1769, Fr. Mains de Lamberto erected a "visita" in Bani with settlements around Don Cayo banks and in 1762, these settlements became a sitio, with local officials headed by Don Francisco Baltazar as "Tiniente Absolute".
+         
+            On 21 November 1903 the town of Bani together with Alaminos, Bolinao, San Isidro de Potot and Infanta were annexed to Pangasinan. In 1918 the road from Alaminos to Bani was started. During the time of Martial Law the mayor of Bani was Marcelo Navarro, a member of the Liberal Party. After the People Power of 1986 the OIC who headed Bani was Edmundo Cacho
+            Bani is the hometown of TV host and former Pangasinan governor Oscar Orbos. From the Municipal Hall one would read that this town used to be a part of Zambales and its founders include Pangasinenses, Ilocanos and Zambals.
+            In May 2009, Bani along with Anda and Bolinao, was severely damaged by Typhoon Emong. The typhoon damaged an office close to the Municipal Building, the Western Pangasinan Lyceum, and a lot of structures and houses.
+    
+          </p>
+
+          <p>
+
+          </p>
+        </div>
+
+
+      </article>
+      <div id="quote-container">
+        <div id="quote-overlay">
+          <div id="quote">
+            <h1 >
+              1869 Immaculate Concepcion Parish Church
+            </h1>
+          </div>
+        </div>
+        <div id="parallax">
+        </div>
+
+      </div>
+      <article>
+        <p style="font-size: 2em;">
+          The Immaculate Concepcion Parish Church was canonically erected in 1869. It is under the jurisdiction of the Roman Catholic Diocese of San Fernando de La Union (Dioecesis Ferdinandopolitana ab Unione, Suffragan of Lingayen – Dagupan, which was created on January 19, 1970 and erected on April 11, 1970, comprising the Civil Province of La Union, under the Titular, St. William the Hermit, February 10). The Church is under a diocese of the Latin Rite of the Roman Catholic Church in the Philippines from the Archdiocese of Nueva Segovia.
+        </p>
+      </article>
+    
+    <aside></aside>
+
+    
+    <article>
+      <h1 style="text-align: center; font-size:3em; padding-bottom: 1rem;">Accomplishments</h1>
+      <div id="photo-collage">
+        <img class="photo" src="images/mayor.jpg">
+        <img class="photo" src="images/mayor2.jpg">
+        <img class="photo" src="images/mayor3.jpg">
+        <img class="photo" src="images/mayor4.jpg">
+      </div>
+
+    </article>
+    <div style="background: #1b64814b; color:#0a2424;">
+      <div class="logo">
+        <img src="images/no logo.png"> 
+      </div>
+
+      <div style="font-size: 18px;padding-bottom: 3rem; padding-top: 3rem; padding-left: 4rem; padding-right: 4rem; width:25%;">
+        <h3 >OUR VISION</h3>
+        A vibrant and progressive community, embarking to be an alternative center for <br>agro-trade and commercial activity where healthy and empowered people enjoy prosperity, peace and working in harmony to achieve a balanced sustainable growth, attuned to globalization.
+        <br><br>
+        <h3>OUR MISSION</h3>
+        To pursue socio-economic sustainability through agricultural and fishery modernization particulary putting in place a state-of-the-art urban amenities, yet keeping intact its natural environments, ecological valance and rural ambience, and enhancing its indigenous cultural heritage.
+
+      </div>
+   
+    </div>
+  <footer>
+    <p id="copyright" style="text-indent: 2.5em; position:relative;">
+      COPYRIGHT © 2020. MUNICIPALITY OF ROSARIO PROVINCE OF LA UNION. ALL RIGHTS RESERVED
+      <img src="images/Systems_Technology_Institute.png" style="float: right; width: 10rem; top:50; right:10; position:absolute;">
+    </p>
+  </footer>
+
+</body>
+</html>
