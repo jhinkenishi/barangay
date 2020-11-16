@@ -391,7 +391,42 @@ article{
     box-shadow: none;
     opacity: 1;
 }
+#contacts{
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    width: 100%;
+    border-collapse: collapse;
+}
+#contacts td, th{
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+#contacts tr:nth-child(even) {
+    background: #0f536e;
+    color: #dbd5d5;
+}
+#contacts tr:nth-child(odd) {
+    background: #7ec1db;
+    color: black;
+}
+.follow-content:hover{
+    cursor: pointer;
+}
+.pop-up-image:hover{
+    transform: scale(1.1, 1.1);
+    transition: .25s;
+}
+.pop-up-text:hover{
+    transform: scale(1.1, 1.1);
+    transition: .25s;
+}
 
+#government-logo:hover{
+    transform: scale(1.1, 1.1);
+    transition: .25s;
+}
 /*Article Ends*/
 
 
